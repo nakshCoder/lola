@@ -24,6 +24,7 @@
 
     <!-- Style CSS -->
     <link href="css/bootstrap.css" media="screen" rel="stylesheet" />
+
     <link href="css/font-awesome.css" media="screen" rel="stylesheet" />
     <!-- Selectize -->
     <link href="css/selectize.css" media="screen" rel="stylesheet" />
@@ -273,9 +274,7 @@
                               <h5
                                 class="modal-title"
                                 id="exampleModalLongTitle"
-                              >
-                                Colors
-                              </h5>
+                              ></h5>
                               <button
                                 type="button"
                                 class="close"
@@ -286,45 +285,150 @@
                               </button>
                             </div>
                             <div class="modal-body">
-                              <div class="color-container">
-                                  <div class="color-box">
-                                    <div class="color-status-1"></div>
-                                    <div class="color-name">BEIGE</div>
+                              <div class="accordionWrapper">
+                                <div class="accordionItem open">
+                                  <h2 class="accordionItemHeading">
+                                    Color <span>+</span>
+                                  </h2>
+                                  <div class="accordionItemContent">
+                                    <div class="color-container">
+                                      <div class="color-box">
+                                        <div class="color-status-1"></div>
+                                        <div class="color-name">BEIGE</div>
+                                      </div>
+                                      <div class="color-box">
+                                        <div class="color-status-2"></div>
+                                        <div class="color-name">BLACK</div>
+                                      </div>
+                                      <div class="color-box">
+                                        <div class="color-status-3"></div>
+                                        <div class="color-name">BLUE</div>
+                                      </div>
+                                      <div class="color-box">
+                                        <div class="color-status-4"></div>
+                                        <div class="color-name">BROWN</div>
+                                      </div>
+                                      <div class="color-box">
+                                        <div class="color-status-5"></div>
+                                        <div class="color-name">GREEN</div>
+                                      </div>
+                                      <div class="color-box">
+                                        <div class="color-status-6"></div>
+                                        <div class="color-name">GREY</div>
+                                      </div>
+                                      <div class="color-box">
+                                        <div class="color-status-7"></div>
+                                        <div class="color-name">KHAKI</div>
+                                      </div>
+                                      <div class="color-box">
+                                        <div class="color-status-8"></div>
+                                        <div class="color-name">MAGENTA</div>
+                                      </div>
+                                      <div class="color-box">
+                                        <div class="color-status-9"></div>
+                                        <div class="color-name">ORANGE</div>
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div class="color-box">
-                                    <div class="color-status-2"></div>
-                                    <div class="color-name">BLACK</div>
+                                </div>
+
+                                <div class="accordionItem close">
+                                  <h2 class="accordionItemHeading">
+                                    Price <span>+</span>
+                                  </h2>
+                                  <div class="accordionItemContent">
+                                    <p>Price: <output id="value"></output></p>
+                                    <input
+                                      id="value_input"
+                                      type="range"
+                                      min="0"
+                                      max="100"
+                                      step="10"
+                                    />
                                   </div>
-                                  <div class="color-box">
-                                    <div class="color-status-3"></div>
-                                    <div class="color-name">BLUE</div>
+                                </div>
+
+                                <div class="accordionItem close">
+                                  <h2 class="accordionItemHeading">
+                                    Type of Product <span>+</span>
+                                  </h2>
+                                  <div class="accordionItemContent">
+                                    <div class="product-type-container">
+                                      <div class="product-type-box">
+                                        <div class="product-type-name">
+                                          BAGS
+                                        </div>
+                                      </div>
+                                      <div class="product-type-box">
+                                        <div class="product-type-name">
+                                          BLOUSE
+                                        </div>
+                                      </div>
+                                      <div class="product-type-box">
+                                        <div class="product-type-name">
+                                          BODYSUIT
+                                        </div>
+                                      </div>
+                                      <div class="product-type-box">
+                                        <div class="product-type-name">
+                                          DRESSES
+                                        </div>
+                                      </div>
+                                      <div class="product-type-box">
+                                        <div class="product-type-name">
+                                          HIGH-HEELS
+                                        </div>
+                                      </div>
+                                      <div class="product-type-box">
+                                        <div class="product-type-name">
+                                          JACKETS
+                                        </div>
+                                      </div>
+                                      <div class="product-type-box">
+                                        <div class="product-type-name">
+                                          JEANS
+                                        </div>
+                                      </div>
+                                      <div class="product-type-box">
+                                        <div class="product-type-name">
+                                          JUMPSUITS
+                                        </div>
+                                      </div>
+                                      <div class="product-type-box">
+                                        <div class="product-type-name">
+                                          KNITWEAR
+                                        </div>
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div class="color-box">
-                                    <div class="color-status-4"></div>
-                                    <div class="color-name">BROWN</div>
+                                </div>
+                              </div>
+
+                              <div class="accordionItem close">
+                                <h2 class="accordionItemHeading">
+                                  Size <span>+</span>
+                                </h2>
+                                <div class="accordionItemContent">
+                                  <div class="product-type-container">
+                                    <div class="product-type-box">
+                                      <div class="product-type-name">
+                                        X-SMALL
+                                      </div>
+                                    </div>
+                                    <div class="product-type-box">
+                                      <div class="product-type-name">SMALL</div>
+                                    </div>
+                                    <div class="product-type-box">
+                                      <div class="product-type-name">
+                                        MEDIUM
+                                      </div>
+                                    </div>
+                                    <div class="product-type-box">
+                                      <div class="product-type-name">LARGE</div>
+                                    </div>
                                   </div>
-                                  <div class="color-box">
-                                    <div class="color-status-5"></div>
-                                    <div class="color-name">GREEN</div>
-                                  </div>
-                                  <div class="color-box">
-                                    <div class="color-status-6"></div>
-                                    <div class="color-name">
-                                      GREY</div>
-                                  </div>
-                                  <div class="color-box">
-                                    <div class="color-status-7"></div>
-                                    <div class="color-name">KHAKI</div>
-                                  </div>
-                                  <div class="color-box">
-                                    <div class="color-status-8"></div>
-                                    <div class="color-name">
-                                      MAGENTA</div>
-                                  </div>
-                                  <div class="color-box">
-                                    <div class="color-status-9"></div>
-                                    <div class="color-name">ORANGE</div>
-                                  </div>
+                                </div>
+                              </div>
                             </div>
                             <div class="modal-footer">
                               <button

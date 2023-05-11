@@ -97,7 +97,24 @@
   justify-content: space-between;
 }
 
+.product-type-container {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
 .color-box {
+  display: flex;
+  gap: 10px;
+  background-color: transparent;
+  align-items: center;
+  width: 30%;
+  margin: 10px 0px;
+}
+
+.product-type-box {
   display: flex;
   gap: 10px;
   background-color: transparent;
@@ -172,4 +189,62 @@
 .color-name {
   font-size: 0.85rem;
   color: #171717;
+}
+
+.product-type-name {
+  font-size: 0.85rem;
+  color: #171717;
+}
+
+.accordionItem {
+  float: left;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Open-sans", Arial, sans-serif;
+}
+.accordionItemHeading {
+  cursor: pointer;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  background: #000;
+  color: #fff;
+  width: 100%;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.accordionItemHeading span {
+  float: right;
+  font-size: 25px;
+}
+.close .accordionItemContent {
+  height: 0px;
+  transition: height 1s ease-out;
+  transform: scaleY(0);
+  float: left;
+  display: block;
+}
+.open .accordionItemContent {
+  padding: 20px;
+  background-color: #f0f1f1;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  display: block;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.4s ease;
+  box-sizing: border-box;
+}
+
+.open .accordionItemHeading {
+  margin: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #073e63;
+  color: #cdd7d8;
 }
