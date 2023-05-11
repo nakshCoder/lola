@@ -1,0 +1,175 @@
+.user-info {
+  padding-top: 150px;
+}
+
+.user-info .page-title {
+  font-size: 2rem;
+}
+
+.user-info-section {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.user-image {
+  width: 30%;
+  text-align: center;
+}
+.user-image img {
+  box-shadow: 0px 0px 13px #171717;
+  width: 60%;
+  border-radius: 50%;
+}
+
+.user-image p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #171717;
+  font-weight: 600;
+  text-align: center;
+}
+
+.user-info-box {
+  width: 70%;
+}
+
+.user-info .page-title {
+  margin-bottom: 10px;
+}
+
+.buyer-update-btn {
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  line-height: 10px;
+  font-weight: bold;
+  border-radius: 0;
+  background-color: #171717;
+  text-transform: uppercase;
+  color: white;
+  padding: 18px 50px;
+  letter-spacing: 5px;
+  border: 1px solid transparent;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.buyer-update-btn:hover {
+  background-color: rgb(145, 145, 236);
+}
+
+.user-want {
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+
+.user-want .page-title,
+.order-history .page-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.order-history {
+  width: 98%;
+  margin: 30px auto;
+}
+
+.color-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+
+.color-container {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+.color-box {
+  display: flex;
+  gap: 10px;
+  background-color: transparent;
+  align-items: center;
+  width: 30%;
+  margin: 10px 0px;
+}
+
+.color-status-1 {
+  width: 15px;
+  height: 15px;
+  background-color: BEIGE;
+  cursor: pointer;
+}
+
+.color-status-2 {
+  width: 15px;
+  height: 15px;
+  background-color: BLACK;
+  cursor: pointer;
+}
+
+.color-status-3 {
+  width: 15px;
+  height: 15px;
+  background-color: BLUE;
+  cursor: pointer;
+}
+
+.color-status-4 {
+  width: 15px;
+  height: 15px;
+  background-color: BROWN;
+  cursor: pointer;
+}
+
+.color-status-5 {
+  width: 15px;
+  height: 15px;
+  background-color: GREEN;
+  cursor: pointer;
+}
+
+.color-status-6 {
+  width: 15px;
+  height: 15px;
+  background-color: GREY;
+  cursor: pointer;
+}
+
+.color-status-7 {
+  width: 15px;
+  height: 15px;
+  background-color: KHAKI;
+  cursor: pointer;
+}
+
+.color-status-8 {
+  width: 15px;
+  height: 15px;
+  background-color: MAGENTA;
+  cursor: pointer;
+}
+
+.color-status-9 {
+  width: 15px;
+  height: 15px;
+  background-color: ORANGE;
+  cursor: pointer;
+}
+
+.color-name {
+  font-size: 0.85rem;
+  color: #171717;
+}

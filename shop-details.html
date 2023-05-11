@@ -29,6 +29,7 @@
     <link href="css/selectize.css" media="screen" rel="stylesheet" />
     <!-- Style -->
     <link href="style.css" media="screen" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body class="shop-page shop-page-product-details">
     <!-- Spinner -->
@@ -90,7 +91,7 @@
     <!-- End Theme Menu -->
     <div id="page" class="site invisible">
       <!-- Header -->
-      <header class="header">
+      <header class="header" style="background-color: aliceblue">
         <div class="menu-link-wrap">
           <a href="#" class="menu-link">
             <span></span>
@@ -108,7 +109,7 @@
       </header>
       <!-- End Header -->
       <!--Shop Page-->
-      <div class="site-main clearfix">
+      <div class="site-main clearfix" style="padding-top: 89px">
         <div class="col-md-7">
           <div class="row">
             <div
@@ -242,32 +243,104 @@
                       </div>
                     </div>
                     <div class="wrap-select">
-                      <select
-                        name="select-size"
-                        class="select-size"
-                        id="select-size"
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-toggle="modal"
+                        data-target="#exampleModalLong"
+                        style="
+                          padding: 18px 64px;
+                          width: 100%;
+                          margin-bottom: 20px;
+                        "
                       >
-                        <option value="SM" selected>Small</option>
-                        <option value="BG">Big</option>
-                        <option value="XXXL">XXXL</option>
-                        <option value="XXL">XXL</option>
-                        <option value="XL">XL</option>
-                        <option value="L">L</option>
-                        <option value="S">S</option>
-                      </select>
-                      <select
-                        name="select-color"
-                        class="select-color"
-                        id="select-color"
+                        Filter
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModalLong"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="exampleModalLongTitle"
+                        aria-hidden="true"
                       >
-                        <option value="Bl" selected>Black</option>
-                        <option value="RD">Red</option>
-                        <option value="BL">Blue</option>
-                        <option value="WT">White</option>
-                        <option value="OR">Orange</option>
-                        <option value="YL">Yellow</option>
-                        <option value="PR">Purple</option>
-                      </select>
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5
+                                class="modal-title"
+                                id="exampleModalLongTitle"
+                              >
+                                Colors
+                              </h5>
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="color-container">
+                                  <div class="color-box">
+                                    <div class="color-status-1"></div>
+                                    <div class="color-name">BEIGE</div>
+                                  </div>
+                                  <div class="color-box">
+                                    <div class="color-status-2"></div>
+                                    <div class="color-name">BLACK</div>
+                                  </div>
+                                  <div class="color-box">
+                                    <div class="color-status-3"></div>
+                                    <div class="color-name">BLUE</div>
+                                  </div>
+                                  <div class="color-box">
+                                    <div class="color-status-4"></div>
+                                    <div class="color-name">BROWN</div>
+                                  </div>
+                                  <div class="color-box">
+                                    <div class="color-status-5"></div>
+                                    <div class="color-name">GREEN</div>
+                                  </div>
+                                  <div class="color-box">
+                                    <div class="color-status-6"></div>
+                                    <div class="color-name">
+                                      GREY</div>
+                                  </div>
+                                  <div class="color-box">
+                                    <div class="color-status-7"></div>
+                                    <div class="color-name">KHAKI</div>
+                                  </div>
+                                  <div class="color-box">
+                                    <div class="color-status-8"></div>
+                                    <div class="color-name">
+                                      MAGENTA</div>
+                                  </div>
+                                  <div class="color-box">
+                                    <div class="color-status-9"></div>
+                                    <div class="color-name">ORANGE</div>
+                                  </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button type="button" class="btn btn-primary">
+                                Save changes
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <p class="button">
                       <input type="submit" class="button" value="add to cart" />
@@ -383,12 +456,13 @@
       </div>
     </div>
     <!-- End Shop Cart -->
-
     <!-- main JS libs  -->
     <script src="js/lib/jquery-1.12.2.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
-    <!-- Modernizr Library -->
-    <script src="js/lib/modernizr.min.js"></script>
+    <!-- script -->
+    <script src="script.js"></script>
+    <!-- Modernizr Library
+    <script src="js/lib/modernizr.min.js"></script> -->
 
     <!--[if lt IE 9]>
       <script src="js/lib/html5shiv.js"></script>
